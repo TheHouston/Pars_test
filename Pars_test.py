@@ -1,5 +1,3 @@
-#F:\Общая\test2.txt
-
 #Пути к файлам
 #path_1 = input ('Путь к первому файлу: ')
 #path_2 = input ('Путь ко второму файлу: ')
@@ -23,7 +21,6 @@ with open(path_1, 'r') as file_1, open(path_2, 'r') as file_2, open(path_3, 'w')
     for section_1 in quest_section_1:
         for section_2 in quest_section_2:
             if section_1[15:] == section_2[15:]:
-                #continue
                 print (section_1[15:] == section_2[15:])
                 print (section_1)
                 print (section_2)
@@ -35,7 +32,6 @@ with open(path_1, 'r') as file_1, open(path_2, 'r') as file_2, open(path_3, 'w')
                 print (section_1)
                 print (section_2)
                 caunt += 1
-                #test.append(section_2)
 print(count)
 print(caunt)
             
