@@ -16,22 +16,7 @@ with open(path_1, 'r') as file_1, open(path_2, 'r') as file_2, open(path_3, 'w')
     quest_section_1 = file_1_r.split('#\n')
     quest_section_2 = file_2_r.split('#\n')
 
-        #Перебор значений из списков
-    '''for section_1 in quest_section_1:
-        for section_2 in quest_section_2:
-            #Убрал первые 15 символов и сравниваю строковые значения
-            if section_1[15:] == section_2[15:]:
-                print (section_1[15:] == section_2[15:])
-                print (section_1)
-                print (section_2)
-                count += 1
-            else:
-                print (section_1[15:] == section_2[15:])
-                file_3.write('#\n')
-                file_3.write(section_1[15::])
-                print (section_1)
-                print (section_2)
-                caunt += 1'''
+        #Перебор значений из списка
     for section_1 in quest_section_1:
         try:
             quest_section_2.remove(section_1)
