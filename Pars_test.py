@@ -1,9 +1,9 @@
 #Пути к файлам
 #path_1 = input ('Путь к первому файлу: ')
 #path_2 = input ('Путь ко второму файлу: ')
-path_1 = 'F:\\Общая\\test.txt'
-path_2 = 'F:\\Общая\\test2.txt'
-path_3 = 'C:\\Users\\mbukin\\Desktop\test3.txt'
+path_1 = 'F:\\Общая\\003.90(сборка).txt'
+path_2 = 'F:\\Общая\\003.90.txt'
+path_3 = 'C:\\Users\\mbukin\\Desktop\\test3.txt'
 
 #Открываем три файла
 with open(path_1, 'r') as file_1, open(path_2, 'r') as file_2, open(path_3, 'w') as file_3:
@@ -27,7 +27,6 @@ with open(path_1, 'r') as file_1, open(path_2, 'r') as file_2, open(path_3, 'w')
                     section_1 = section_1.replace(number_1, number_2)
                     quest_section_2.remove(section_1)
             except ValueError:
-                #continue
                 file_3.write('#\n')
                 file_3.write(section_1)
     for section_2 in quest_section_2:
